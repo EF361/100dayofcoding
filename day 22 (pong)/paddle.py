@@ -3,9 +3,13 @@ from turtle import Turtle
 
 class Paddle(Turtle):
     def __init__(self):
-        self.paddle = Turtle(shape="square")
-        self.paddle.penup()
-        self.paddle.speed("fastest")
-        self.paddle.goto(x=350, y=0)
-        self.paddle.shapesize(5, 1, 1)
-        self.paddle.color("white")
+        self = Turtle(shape="square")
+        self.penup()
+        self.speed("fastest")
+        self.goto(x=350, y=0)
+        self.shapesize(5, 1, 1)
+        self.color("white")
+
+    def go_up(self):
+        new_y = self.ycor() + 20
+        self.goto(self.xcor(), new_y)
