@@ -1,0 +1,12 @@
+steps to create the snake game
+
+day 1: 
+1. create the snake body 
+2. move the snake 
+3. control the snake using keyboard 
+
+day 2: 
+4. detect collision with food 
+5. create a scoreboard 
+6. detect collision with wall (game ends)
+7. detect collision with tall (game ends)
