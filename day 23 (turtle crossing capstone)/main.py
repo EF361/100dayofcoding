@@ -11,10 +11,15 @@ screen.tracer(0)
 
 # define object
 tim = Player()
+car_manager = CarManager()
+
+screen.listen()
+screen.onkeypress(tim.move, "Up")
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    screen.listen()
-    screen.onkeypress(tim.move, "Up")
+
+    car_manager.create_car()
+    car_manager.move_cars()
