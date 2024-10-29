@@ -4,8 +4,8 @@ import random as r
 
 class Food(Turtle):
     def refresh(self):
-        random_x = r.randint(-280, 280)
-        random_y = r.randint(-280, 280)
+        random_x = r.randint(-250, 250)
+        random_y = r.randint(-250, 250)
         self.goto(random_x, random_y)
 
     def __init__(self):
